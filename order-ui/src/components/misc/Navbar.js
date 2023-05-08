@@ -18,10 +18,6 @@ function Navbar() {
     return userIsAuthenticated() ? { "display": "block" } : { "display": "none" }
   }
 
-//   const adminPageStyle = () => {
-//     const user = getUser()
-//     return user && user.data.rol[0] === 'ADMIN' ? { "display": "block" } : { "display": "none" }
-//   }
   const adminPageStyle = () => {
     const user = getUser()
     return user?.data?.rol[0] === 'ADMIN' ? { "display": "block" } : { "display": "none" }
